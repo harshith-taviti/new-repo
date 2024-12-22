@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="imgs/gpa-logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+    <title>Home | CalGPA</title>
+</head>
+<body>
+    <div id="loader" class="loader">
+        <div class="loader-circle">
+            <span id="loader-text">A+</span>
+        </div>
+    </div>
+    <nav class="navbar">
+        <h1><a href="index.html">CalGPA <sup><i class="fa-solid fa-graduation-cap"></i></sup></a></h1>
+        <div class="menu" onclick="openNav()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <span class="options" id="options">
+            <ol>
+                <a href="pages/about.html"><li>About</li></a>
+                <a href="pages/estimator.html"><li>Estimators</li></a>
+                <a href="pages/todo.html"><li>To Do</li></a>
+                <a href="pages/roadmap.html"><li>Roadmap</li></a>
+            </ol>
+        </span>
+        <div id="mySidenav" class="sidenav">
+            <span href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</span>
+            <a href="pages/about.html">About</a>
+            <a href="pages/estimator.html">Estimators</a>
+            <a href="pages/todo.html">Todo</a>
+            <a href="pages/roadmap.html">Roadmap</a>
+            <div class="info">
+                <span><a onclick="darkMode()" class="mode-change"><i class="fa-solid fa-moon"></i></a></span>
+                <a href="index.html" class="logo-name small-text"><small>@CalGPA2024</small></a>
+            </div>
+            <a class="social-heading small-text"><small>devSocials</small></a>
+            <div class="socials">
+                <a href="https://www.linkedin.com/in/bala-karthikeya-aluru/" target="_blank" class="circle"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/alurubalakarthikeya" target="_blank" class="circle"><i class="fa-brands fa-github"></i></a>
+                <a href="https://x.com/balakarthikeyaa" target="_blank" class="circle"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+          </div>
+    </nav><br>
+    <div class="mode">
+        <i class="fa-solid fa-moon" onclick="darkMode()"></i>
+    </div>
+    <span class="heading-desk">
+        <a>Socials</a>
+    </span>
+    <div class="desktop-socials">
+        <a href="https://www.linkedin.com/in/bala-karthikeya-aluru/" target="_blank" class=""><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/alurubalakarthikeya" target="_blank" class=""><i class="fa-brands fa-github"></i></a>
+        <a href="https://x.com/balakarthikeyaa" target="_blank" class=""><i class="fa-brands fa-twitter"></i></a>
+    </div>
+    <div class="home">
+        <div class="content">
+            <h1>Welcome to CalGPA</h1><br>
+            <h2>Check predictions made by our tools of your SGPA based on your internal marks!!</h2>
+            <div class="buttons">
+                <a href="pages/estimator.html"><button id="button1">Get Started</button></a>
+                <a href="pages/about.html"><button id="button2" class="button2">Know more</button></a>
+            </div>
+        </div>
+        <div class="img">
+            <img src="imgs/homeimg.png" alt="GPA" class="floater">
+        </div>
+    </div>
+    <footer>
+        <div class="long-bar">
+            <a href="pages/tracker.html" class="link"><span class="circle"><i class="fa-solid fa-calculator" title="Progress Tracker"></i><br>Estimator</span></a>
+            <a href="pages/guider.html" class="link"><span class="circle"><i class="fa-solid fa-route" title="Goals by Guider"></i><br>Guider</span></a>
+            <a href="pages/attendance.html" class="link"><span class="circle"><i class="fa-solid fa-clipboard-user"></i><br>Attender</span></a>
+            <a href="pages/predictor.html" class="link"><span class="circle"><i class="fa-solid fa-wand-magic-sparkles" title="Predictions based on Previous data"></i><br>Predictor</span></a>
+        </div>
+    </footer>
+    <script src="functional.js"></script>
+</body>
+</html>
